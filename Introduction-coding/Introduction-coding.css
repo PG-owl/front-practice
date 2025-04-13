@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+/* HTML全体の基本設定 */
+html {
+  font-size: 100%; /* 基本のフォントサイズを設定 */
+}
+body {
+  color: #383e45; /* テキストの基本色 */
+  font-size: 0.9rem; /* テキストの基本フォントサイズ */
+}
+a {
+  text-decoration: none; /* リンクの下線を削除 */
+}
+img {
+  max-width: 100%; /* 画像の幅を親要素に収める */
+}
+li {
+  list-style: none; /* リストのデフォルトスタイルを削除 */
+}
+
+/* サイトタイトルのスタイル */
+.site-title {
+  width: 120px; /* タイトルの幅 */
+  line-height: 1px; /* 行間を狭く設定 */
+  padding: 10px 0; /* 上下の余白を設定 */
+}
+.site-title a {
+  display: block; /* タイトルリンクをブロック要素に設定 */
+}
+
+/* セクションタイトルのスタイル */
+.section-title {
+  display: inline-block; /* インラインブロック要素に設定 */
+  font-size: 2rem; /* フォントサイズを大きく設定 */
+  margin-bottom: 60px; /* 下部の余白を設定 */
+  border-bottom: solid 1px #383e45; /* 下線を追加 */
+}
+
+/* コンテンツタイトルのスタイル */
+.content-title {
+  font-size: 1rem; /* フォントサイズを設定 */
+  margin: 10px 0; /* 上下の余白を設定 */
+}
+
+/* コンテンツ全体のラッパー */
+.wrapper {
+  max-width: 960px; /* 最大幅を設定 */
+  margin: 0 auto 100px; /* 中央寄せと下部の余白を設定 */
+  padding: 0 4%; /* 左右の余白を設定 */
+  text-align: center; /* テキストを中央揃え */
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+/* ヘッダー全体のスタイル */
+#header {
+  display: flex; /* フレックスボックスを使用 */
+  justify-content: space-between; /* 子要素を左右に配置 */
+  align-items: center; /* 子要素を縦方向に中央揃え */
+  margin: 0 auto; /* 中央寄せ */
+}
+#header ul {
+  display: flex; /* リストを横並びに配置 */
+  padding: 10px 0; /* 上下の余白を設定 */
+}
+#header li {
+  margin-left: 30px; /* リスト項目間の余白を設定 */
+}
+#header li a {
+  color: #24292e; /* リンクの色を設定 */
+}
+#header li a:hover {
+  opacity: 0.7; /* ホバー時に透明度を変更 */
+}
+
+/*-------------------------------------------
+Mainvisual
+-------------------------------------------*/
+/* メインビジュアルのスタイル */
+#mainvisual {
+  margin-bottom: 80px; /* 下部の余白を設定 */
+}
+#mainvisual img {
+  width: 100%; /* 幅を親要素に収める */
+  max-width: 1920px; /* 最大幅を設定 */
+  height: 600px; /* 高さを固定 */
+  object-fit: cover; /* 画像を要素内に収める */
+}
+
+/*-------------------------------------------
+About
+-------------------------------------------*/
+/* Aboutセクションのスタイル */
+#about .content {
+  display: flex; /* フレックスボックスを使用 */
+  justify-content: center; /* 子要素を中央揃え */
+  align-items: center; /* 子要素を縦方向に中央揃え */
+}
+#about img {
+  width: 100px; /* 画像の幅を設定 */
+  height: 100px; /* 画像の高さを設定 */
+  border-radius: 50%; /* 画像を円形にする */
+  margin-right: 30px; /* 右側の余白を設定 */
+}
+#about .text {
+  text-align: left; /* テキストを左揃え */
+}
+
+/*-------------------------------------------
+Bicycle
+-------------------------------------------*/
+/* Bicycleセクションのスタイル */
+#bicycle ul {
+  display: flex; /* リストを横並びに配置 */
+  justify-content: space-between; /* 子要素を均等に配置 */
+}
+#bicycle li {
+  width: 32%; /* 各リスト項目の幅を設定 */
+}
+
+/*-------------------------------------------
+footer
+-------------------------------------------*/
+/* フッターのスタイル */
+#footer {
+  font-size: 0.5rem; /* フォントサイズを小さく設定 */
+  padding: 10px 0; /* 上下の余白を設定 */
+  text-align: center; /* テキストを中央揃え */
+}
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+/* スマートフォン用のスタイル */
+@media screen and (max-width: 600px) {
+  /*-------------------------------------------
+  Mainvisual
+  -------------------------------------------*/
+  #mainvisual img {
+    height: calc(100vh - 60px); /* ビューポートの高さに応じて調整 */
+  }
+
+  /*-------------------------------------------
+  About
+  -------------------------------------------*/
+  #about .content {
+    flex-direction: column; /* 子要素を縦並びに変更 */
+  }
+  #about img {
+    margin-right: 0; /* 右側の余白を削除 */
+  }
+
+  /*-------------------------------------------
+  Bicycle
+  -------------------------------------------*/
+  #bicycle ul {
+    flex-direction: column; /* リストを縦並びに変更 */
+  }
+  #bicycle li {
+    width: 100%; /* リスト項目の幅を100%に設定 */
+    margin-bottom: 30px; /* 下部の余白を設定 */
+  }
+}
