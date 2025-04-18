@@ -19,13 +19,14 @@
   font-weight: bold;
   margin: 0 0 20px 0;
 }
+.section.section-secondary {
+  background-color: #efefef;
+}
 
 /* about */
 .about {
   margin: 0;
   display: flex;
-}
-.about-image {
 }
 .about-caption {
   padding-left: 15px;
@@ -33,4 +34,42 @@
 .about-headline {
   margin: 0 0 70px 0;
   font-size: 30px;
+}
+
+.grid {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grid-item {
+  list-style: none;
+}
+.grid-col-2 > .grid-item {
+  width: 50%;
+}
+
+.grid-col-3 > .grid-item {
+  width: 33.3%;
+}
+
+.grid-col-4 > .grid-item {
+  width: 25%;
+}
+
+.feature {
+  text-align: center;
+  padding: 0 15px;
+}
+.feature-headline {
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+.feature-image {
+  margin: 0 0 20px 0;
+}
+.feature-description {
+  margin: 0;
+  text-align: left;
 }
