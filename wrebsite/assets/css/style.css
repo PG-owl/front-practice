@@ -8,6 +8,16 @@
   line-height: 1.5;
   color: #333;
 }
+button,
+label,
+input,
+select,
+textarea {
+  cursor: pointer;
+}
+.button {
+  border: 0;
+}
 
 /* section */
 .section {
@@ -153,4 +163,44 @@
 .button:hover {
   background-color: #555;
   box-shadow: 0 0 0 #999;
+}
+.button.button-submission {
+  background-color: #92d3ca;
+}
+
+/* contact */
+.select {
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  min-width: 500px;
+}
+.input {
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  min-width: 500px;
+}
+.radio {
+  margin: 0 10px;
+}
+.textarea {
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  min-width: 500px;
+  min-height: 100px;
+}
+/* .form {} */
+.form-table {
+  font-weight: bold;
+  margin: 0 auto;
+}
+.form-table th {
+  padding: 10px;
+  text-align: left;
+}
+.form-button {
+  text-align: center;
+  margin: 20px;
 }

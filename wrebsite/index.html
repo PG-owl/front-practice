@@ -210,11 +210,13 @@
     <section class="section section-secondary">
       <h1 class="section-headline">Contact</h1>
       <form action="" class="contact-form">
-        <table class="table-form">
+        <table class="form-table">
           <tr>
-            <th>Menu</th>
+            <th>
+              <label for="menu"> Menu </label>
+            </th>
             <td>
-              <select name="" id="">
+              <select class="select" name="" id="menu">
                 <option value="menu-1">Menu 1</option>
                 <option value="menu-2">Menu 2</option>
                 <option value="menu-3">Menu 3</option>
@@ -226,7 +228,7 @@
               <label for="name"> Name </label>
             </th>
             <td>
-              <input type="text" id="name" />
+              <input class="input" type="text" id="name" />
             </td>
           </tr>
           <tr>
@@ -234,7 +236,7 @@
               <label for="email"> Email </label>
             </th>
             <td>
-              <input type="email" id="email" />
+              <input class="input" type="email" id="email" />
             </td>
           </tr>
           <tr>
@@ -242,23 +244,29 @@
               <label> Gender </label>
             </th>
             <td>
-              <label>
+              <label class="radio">
                 <input type="radio" name="gender" value="male" />Male
               </label>
-              <label>
+              <label class="radio">
                 <input type="radio" name="gender" value="femail" />Femail
               </label>
-              <label>
+              <label class="radio">
                 <input type="radio" name="gender" value="other" />Other
               </label>
             </td>
           </tr>
           <tr>
-            <th>Detail</th>
-            <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+            <th>
+              <label for="detail"> Detail </label>
+            </th>
+            <td>
+              <textarea class="textarea id="detail" cols="30" rows="10"></textarea>
+            </td>
           </tr>
         </table>
-        <button class="button" type="submit">Submit</button>
+        <div class="form-button">
+          <button class="button button-submission" type="submit">Submit</button>
+        </div>
       </form>
     </section>
 
