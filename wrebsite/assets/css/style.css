@@ -204,3 +204,55 @@ textarea {
   text-align: center;
   margin: 20px;
 }
+
+/* works */
+.works {
+  margin: 40px 0;
+  padding: 20px;
+  text-align: center;
+}
+.works > img {
+  margin: 0 15px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+}
+.footer-map {
+  margin: 0;
+  padding: 40px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-map > iframe {
+  width: 60%;
+}
+.footer-map-info {
+  width: 40%;
+  padding: 15px;
+}
+
+.footer-map-logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+.font-map-logo > svg {
+  fill: transparent;
+  margin-right: 10px;
+}
+.footer-map-address {
+  font-style: normal;
+}
+.footer-map-address > a {
+  color: #fff;
+}
+.footer-line {
+  border-color: #444;
+}
+.footer-copyright {
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
